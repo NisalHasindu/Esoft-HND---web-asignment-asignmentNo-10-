@@ -37,12 +37,12 @@ body{
     border-radius: 20px;
 }
 #myProfile .profileDetails{
-    width: 45%;
+    width: 50%;
     display: inline-block;
     height: auto;
 }
 #myProfile .panaltyDetalis{
-    width: 45%;
+    width: 50%;
     display: block;
     float: right;
     height: auto;
