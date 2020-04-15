@@ -87,36 +87,51 @@
 ?>
 
 <?php
+
     //user login mekanisme
     if(isset($_POST['btnLogin'])){
         $email = mysqli_real_escape_string($connection, $_POST['txtEmail_login']);
         $password = mysqli_real_escape_string($connection, $_POST['txtPassword_login']);
         //encript the password user typed
         $hashed_password = sha1($password);
-        //prepare database query
-        $query = "SELECT * FROM tbluser WHERE email = '$email' AND password='$hashed_password' LIMIT 1";
-        //excute query
-        $excute_query = mysqli_query($connection, $query);
+        //prepare database queryes
+        $user_query = "SELECT * FROM tbluser WHERE email = '$email' AND password='$hashed_password' LIMIT 1";
+        $admin_query = "SELECT * FROM tbladmin WHERE email = '$email' LIMIT 1";
+        //excute quires
+        $excute_user_query = mysqli_query($connection, $user_query);
+        $excute_admin_query = mysqli_query($connection, $admin_query);
 
-        if($excute_query){
-            if(mysqli_num_rows($excute_query)==1){
+        
+
+        if($excute_user_query || $excute_admin_query){
+            if(mysqli_num_rows($excute_user_query)==1){
                 //stor user details to a varibale
-                $user = mysqli_fetch_assoc($excute_query);
+                $user = mysqli_fetch_assoc($excute_user_query);
                 //pass first name and user type to session variable
                 $_SESSION['firstName'] = $user['firstName'];
                 $_SESSION['userType'] = $user['userType'];
                 //rederect to the home page
                 header('Location: home.php');
             }else{
-                //if not show error massage
-                echo "<script>alert('inalied email name or password!');</script>";
+                if(mysqli_num_rows($excute_admin_query)==1){
+                    //stor admin details to a varibale
+                    $admin = mysqli_fetch_assoc($excute_admin_query);
+                    //pass full name to session variable
+                    $_SESSION['fullName'] = $admin['fullName'];
+                    //rederect to the admin page
+                    header('Location: admin.php');
+                }else{
+                    //if not show error massage
+                    echo "<script>alert('invalied email and pasword!');</script>";
+                }
             }
         }else{
-            //if not show error massage
-            echo "<script>alert('databse query failed!');</script>";
+            echo "<script>alert('database query error!');</script>";
         }
     }
+    
 ?>
+
 <!-- the user login page for online library management system-->
 <!DOCTYPE html>
 <html lang="en">
