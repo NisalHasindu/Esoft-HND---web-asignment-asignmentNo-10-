@@ -1,3 +1,11 @@
+<?php session_start(); ?>
+<?php require_once('inc/connection.php'); ?>
+<?php
+    if(!isset($_SESSION['fullName'])){
+        //rederect to login page
+        header('Location:index.php');
+    }
+?>
 <!-- the admin page for online library management system-->
 <!DOCTYPE html>
 <html lang="en">
@@ -29,8 +37,11 @@
         <div id="divProfile" class="hideProfile">
                 <img src="img/user-circle-solid.svg" alt="" id="profilPic">
                 <p id="profileName">admin</p>
-                <h2 id="userName">USER NAME</h2>
-                <button type="input" id="btnLogout">Logout</button>
+                <h2 id="userName"><i class="fas fa-user-alt"></i> <?php echo $_SESSION['fullName'];?></h2>
+                <a href="logout.php">
+                    <button type="input" id="btnLogout">Logout</button>
+                </a>
+                
         </div>
         
     </div>
