@@ -2,6 +2,7 @@
 <?php require_once('inc/connection.php'); ?>
 <?php
     if(!isset($_SESSION['firstName'])){
+        //rederect to login page
         header('Location:index.php');
     }
 ?>
