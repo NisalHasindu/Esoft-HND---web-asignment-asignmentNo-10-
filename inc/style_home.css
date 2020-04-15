@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+/*styles for 1920px 1080px web page*/
+.header{
+    height: 117px;
+}
+.divMain{
+    margin-top: 100px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.loding{
+    position: fixed;
+    display: block;
+    margin-left: -10%;
+    text-align: center;
+    width: 100%;
+}
+.loding img{
+    margin-top: 10%;
+    width: 30%;
+}
+
+#divProfile{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    top:1px;
+    padding-left: 2%;
+    position: fixed;
+    width: 350px;
+    border-left: 1px solid rgba(0, 82, 189, 0.199) ;
+    right: 34px;
+    height: 117px;
+}
+#divProfile #btnLogout{
+    display: block;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #FF001A;
+    color: white;
+    font-size: 18px;
+    padding: 7px 20px 7px 20px;
+    margin-top: -50px;
+    float: right;
+}
+#divProfile #btnLogout:hover{
+    background-color: rgb(233, 2, 25);
+}
+#profileIcon{
+    visibility: hidden;
+}
+#profilPic{
+    visibility: hidden;
+    display: none;
+}
+main{
+    width: 100%;
+    padding: 2% 10% 2% 10%;
+    position: inline-end;
+    display: block;
+}
+#divProfile #userName{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif; white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 130px;
+}
+#divProfile #profileName{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+/* image for 1600px web page*/
+@media screen and (max-width: 1600px){
+    
+}
+/* image for 1366px web page*/
+@media screen and (max-width: 1366px){
+    .header{
+        height: 83px;
+    }
+    .divMain{
+        margin-top: 83px;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    #divProfile{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        top:0px;
+        padding-left: 2%;
+        position: fixed;
+        width: 250px;
+        border-left: 1px solid rgba(0, 82, 189, 0.199) ;
+        right: 34px;
+        height: 83px;
+    }
+    
+    #divProfile #btnLogout{
+        display: block;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 12px;
+        padding: 5px 15px 5px 15px;
+        margin-top: -38px;
+    }
+    
+    #divProfile #userName{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #divProfile #userName:hover{
+        color: yellow;
+    }
+    #divProfile #profileName{
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.733);
+    }
+}
+
+/* style for 1200px web page */
+@media screen and (max-width: 1200px){
+    .loding img{
+        margin-top: 40px;
+        width: 40%;
+    }
+}
+
+/* style for screen wodth grather than 910px web page */
+@media screen and (max-width: 910px){
+    .loding img{
+        margin-top: 30px;
+        width: 70%;
+    }
+    .divMain{
+        margin-top: 165px;
+        display: block;
+        float: left;
+        height: 300px;
+        position: relative;
+        width: 100%;
+    }
+    #divProfile{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        position: fixed;
+        padding: 0px;
+        width: 20%;
+        height: 100%;
+        right: 0px;
+        display: block;
+        float: right;
+        background-color: rgba(0, 19, 44, 0.9);
+        margin-top: 166px;
+        margin-right: 0px;
+
+    }
+    #divProfile p{
+        text-align: center;
+        opacity: 0.5;
+        display: block;
+        padding: 0px;
+        margin-top: 5px;
+    }
+    #divProfile h2{
+        font-size: 19px;
+        text-align: center;
+        opacity: 0.5;
+        padding: 0px;
+        margin-top: 5px;
+    }
+    #divProfile #btnLogout{
+        display: block;
+        border: 0px;
+        width: 70%;
+        height: 24px;
+        border-radius: 15px;
+        background-color: rgb(255, 217, 0);
+        color: rgb(0, 0, 0);
+        position: relative;
+        right: 15%;
+        margin-top: 2px;
+        font-size: 11px;
+        padding: 0px;
+    }
+    #divProfile #btnLogout :hover{
+        background-color: rgb(255, 166, 0);
+    }
+
+    #profileIcon{
+        visibility: visible;
+        position: absolute;
+        display: block;
+        color: rgb(255, 255, 255);
+        margin-top: -10px;
+        right: 20px;
+    }
+    #profilPic{
+        display: block;
+        visibility: visible;
+        width: 60%;
+        opacity: 0.5;
+        margin: auto;
+    }
+    .showProfile{
+        visibility: visible;
+        animation-name: transformLeft;
+        animation-duration: 0.2s;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes transformLeft{
+        0%{right:-20%;}
+        50%{right: -10%;}
+        100%{right: 0%;}
+    }
+    .hideProfile{
+        visibility: hidden;
+    }
+}
+
+/* style for screen wodth grather than 720px web page */
+@media screen and (max-width: 720px){
+    .loding img{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .divMain{
+        margin-top: 140px;
+        display: block;
+        float: left;
+        height: 300px;
+        position: relative;
+        width: 100%;
+    }
+    #divProfile{
+        margin-top: 140px;
+        
+        /*visibility: hidden;*/
+    }
+    #profileIcon{
+        margin-top: -10px;
+    }
+}
+
+/* style for screen wodth grather than 680px web page */
+@media screen and (max-width: 680px){
+    .divMain{
+        margin-top: 130px;
+        display: block;
+        float: left;
+        height: 300px;
+        position: relative;
+        width: 100%;
+    }
+    #divProfile{
+        margin-top: 130px;
+        width: 30%;
+    }
+    
+    #profileIcon{
+        margin-top: 0px;
+    }
+}

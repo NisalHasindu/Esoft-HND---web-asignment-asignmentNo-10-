@@ -1,0 +1,54 @@
+.bookIssueDetails{
+    float: left;
+    width: 100%;
+}
+.divRight{
+    width: 50%;
+}
+.divLeft{
+    width: 50%;
+    float: left;
+}
+.divRightTop{
+    background-color: #ECECEC;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.divSearchSection form input{
+    width: 40%;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.divRightBottom .tblBooksTopic{
+    width: 100%;
+    margin-top: 50px;
+    color: #807e7e;
+}
+
+.divRightBottom .tblBooksTopic .TdOne{
+    font-size: 12px;
+    width: 48%;
+}
+.divRightBottom .tblBooksTopic .TdTwo{
+    width: 25%;
+    font-size: 12px;
+}
+.divRightBottom .tblBooksTopic .TdThree{
+    font-size: 12px;
+}
+#frmApproveRequest{
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+#frmApproveRequest button{
+    width: 20%;
+    height: 30px;
+    border: 0px;
+    border-radius: 15px;
+    color: white;
+    margin-right: 10px;
+}

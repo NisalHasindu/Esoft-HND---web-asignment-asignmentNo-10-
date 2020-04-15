@@ -1,0 +1,771 @@
+/*styles for 1920px 1080px web page*/
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+#frmLogin{
+    right: 40px;
+    top:40px;
+    width: 679px;
+    display: block;
+    position: fixed;
+}
+#frmLogin input{
+    border-radius: 15px;
+    border: 1px solid #004CFF;
+    padding: 0px 0px 0px 20px;
+    width: 271px;
+    height: 33px;
+    color: #004CFF;
+    font-size: 15px;
+    margin-right: 10px;
+    
+}
+#eye{
+    margin-left: -45px;
+    margin-top: 10px;
+    position: absolute;
+    opacity: 0.5;
+}
+#frmLogin button{
+    width: 107px;
+    height: 33px;
+    background-color: #FFEC3D;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 16px;
+    color:rgb(44, 44, 46);
+}
+.logo{
+    margin-left: 2%;
+    padding-top: 1%;
+    width: 25%;
+    display: block;
+}
+.logo img{
+    width: 100%;
+}
+.header{
+    background-color:#159EE5;
+    height: 117px;
+    position: fixed;
+    width: 100%;
+}
+.footer{
+    background-color:#159EE5;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 51px;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 17px;
+    float: left;
+    position: fixed;
+}
+.signUp{
+    margin-top: 117px;
+    display: block;
+    background-color: #ECECEC;
+    width: 38.333333%;
+    float: right;
+    padding-top: 100px;
+}
+.background_img{
+    padding-top: 150px;
+    margin-top: 117px;
+    display: block;
+    float: left;
+    width: 61.66666666666667%;
+}
+.background_img img{
+    display: block;
+    margin: auto;
+}
+#frmSignUp{
+    margin:auto;
+    display: block;
+    width: 571px;
+    
+}
+#frmSignUp h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 10px 0px;
+}
+#frmSignUp p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 10px 0px;
+}
+#frmSignUp #txtRdo{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+#frmSignUp input{
+    height:33px;
+    border-radius: 5px;
+    border: 1px solid #9E9E9E;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin:0px 0px 10px 0px;
+}
+#frmSignUp #txtFirstName, #txtLastName, #txtEmail, #txtMobileNo{
+    width: 280px;
+}
+#frmSignUp #txtNic, #txtAddress{
+    width: 571px;
+}
+#frmSignUp #txtFirstName{
+    margin-right: 5px;
+}
+#frmSignUp #txtEmail{
+    margin-right: 5px;
+}
+#frmSignUp #rdoProfeser{
+    margin-left: 20px;
+}
+#frmSignUp #rdoProfeser, #rdoStudent{
+    width: 20px;
+}
+#frmSignUp #txtRdo{
+    padding: 0px 5px 0px 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 5px;
+    overflow: hidden;
+}
+hr{
+    border-top: 1px solid #70707083;
+}
+#frmSignUp .txtNewPassword{
+    width: 386px;
+    height: 40px;
+}
+#frmSignUp .txtConformPassword{
+    width: 386px;
+    height: 40px;
+}
+#btnCreateAccount{
+    width: 256px;
+    height: 76px;
+    background-color: #2863B1;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    display: block;
+    border: 0px;
+}
+
+#temaAndCondition{
+    padding-top: 33px;
+    display: block;
+    margin: auto;
+    color: #004CFF;
+    text-align: center;
+}
+#loginText{
+    visibility: hidden;
+}
+
+
+
+
+
+
+/* image for 1600px web page*/
+@media screen and (max-width: 1600px){
+    
+    * {
+        box-sizing: border-box;
+    }
+    .logo{
+        margin-left: 2%;
+        width: 25%;
+        position: fixed;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .signUp{
+        margin-top: 100px;
+        display: block;
+        background-color: #ECECEC;
+        width: 50%;
+        float: right;
+        padding-top: 100px;
+        height: 900px;
+    }
+    .background_img{
+        padding-top: 100px;
+        margin-top: 60px;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .background_img img{
+        display: block;
+        width: 479px;
+        margin: auto;
+    }
+    #loginText{
+        visibility: hidden;
+    }
+    #login_dropDown_line{
+        display: none;
+    }
+}
+
+/* style for 1366px web page */
+@media screen and (max-width: 1366px){
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+    }
+    #frmLogin{
+        right: 32px;
+        top:28px;
+        width: 483px;
+        display: block;
+        position: fixed;
+    }
+    #frmLogin input{
+        border-radius: 10px;
+        border: 1px solid #004CFF;
+        padding: 0px 0px 0px 10px;
+        width: 192px;
+        height: 24px;
+        color: #004CFF;
+        font-size: 11px;
+        margin-right: 5px;
+        
+    }
+    #eye{
+        scale: 70%;
+        margin-left: -30px;
+        margin-top: 6px;
+        position: absolute;
+        opacity: 0.5;
+    }
+    #frmLogin button{
+        width: 76px;
+        height: 24px;
+        background-color: #FFEC3D;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 12px;
+        color:rgb(44, 44, 46);
+    }
+    .logo{
+        margin-left: 2%;
+        width: 25%;
+        position: fixed;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .header{
+        background-color:#159EE5;
+        height: 83px;
+        position: fixed;
+        width: 100%;
+    }
+    .footer{
+        background-color:#159EE5;
+        color: white;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 36.27px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        float: left;
+    }
+    .signUp{
+        margin-top: 10px;
+        display: block;
+        background-color: #ECECEC;
+        width: 38.333333%;
+        float: right;
+        padding-top: 100px;
+    }
+    .background_img{
+        padding-top: 100px;
+        margin-top: 60px;
+        display: block;
+        float: left;
+        width: 61.66666666666667%;
+    }
+    .background_img img{
+        display: block;
+        width: 379px;
+        margin: auto;
+    }
+    #frmSignUp{
+        margin:auto;
+        display: block;
+        width: 406px;
+    }
+    #frmSignUp h2{
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 0px 10px 0px;
+    }
+    #frmSignUp p{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 0px 7px 0px;
+    }
+    #frmSignUp input{
+        height:23px;
+        border-radius: 5px;
+        border: 1px solid #9E9E9E;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        margin:0px 0px 8px 0px;
+    }
+    #frmSignUp #txtFirstName, #txtLastName, #txtEmail, #txtMobileNo{
+        width: 199px;
+    }
+    #frmSignUp #txtNic, #txtAddress{
+        width: 406px;
+    }
+    #frmSignUp #txtFirstName{
+        margin-right: 4px;
+    }
+    #frmSignUp #txtEmail{
+        margin-right: 4px;
+    }
+    #frmSignUp #rdoProfeser{
+        margin-left: 20px;
+    }
+    #frmSignUp #rdoProfeser, #rdoStudent{
+        width: 17px;
+    }
+    #frmSignUp #txtRdo{
+        padding: 0px 5px 0px 5px;
+        font-size: 11px;
+        display: inline-block;
+        margin-left: 5px;
+        overflow: hidden;
+    }
+    hr{
+        border-top: 1px solid #70707083;
+    }
+    #frmSignUp .txtNewPassword{
+        width: 274px;
+        height: 29px;
+    }
+    #frmSignUp .txtConformPassword{
+        width: 274px;
+        height: 29px;
+    }
+    #btnCreateAccount{
+        width: 178px;
+        height: 54px;
+        background-color: #2863B1;
+        border-radius: 12px;
+        font-size: 14px;
+        color: white;
+        margin: auto;
+        display: block;
+    }
+    #temaAndCondition{
+        padding-top: 20px;
+        display: block;
+        margin: auto;
+        color: #004CFF;
+        text-align: center;
+    }
+    #loginText{
+        visibility: hidden;
+    }
+    #login_dropDown_line{
+        display: none;
+    }
+
+
+
+    
+
+}
+
+/* style for 1200px web page */
+@media screen and (max-width: 1200px){
+    * {
+        box-sizing: border-box;
+    }
+    .logo{
+        margin-top: auto;
+        margin-left: 2%;
+        width: 25%;
+        position: fixed;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .signUp{
+        margin-top: 10px;
+        display: block;
+        background-color: #ECECEC;
+        width: 50%;
+        float: right;
+        padding-top: 100px;
+    }
+    .background_img{
+        padding-top: 100px;
+        margin-top: 60px;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .background_img img{
+        display: block;
+        width: 299px;
+        margin: auto;
+    }
+    #loginText{
+        visibility: hidden;
+    }
+    #login_dropDown_line{
+        display: none;
+    }
+}
+/* style for screen wodth grather than 910px web page */
+@media screen and (max-width: 910px){
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+    }
+    .loginText{
+        display: block;
+        position: static;
+        margin-bottom: 1px;
+        margin-right: 32px;
+        float: right;
+        width: 20%;
+        height: 100%;
+    }
+    #loginText{
+        display: block;
+        right: 0px;
+        bottom:0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        position: relative;
+        visibility: visible;
+        width: 100%;
+        text-align: right;
+    }
+    .non_visible{
+        visibility: hidden;
+    }
+    .visible{
+        visibility: visible;
+        animation-name: transform;
+        animation-duration: 0.1s;
+
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes transform{
+        0%{height:0px;}
+        50%{height: 150px;}
+        100%{height: 130px;}
+    }
+    #frmLogin{
+        margin-left: 32px;
+        margin-top: -43px;
+        width: 100%;
+        background-color: #2863B1;
+        padding: 1% 1% 10% 1%;
+        border-radius: 0px 0px 10px 10px;
+        position: relative;
+
+    }
+    #frmLogin input{
+        border-radius: 10px;
+        border: 1px solid #004CFF;
+        padding: 5px 0px 5px 10px;
+        width: 90%;
+        color: #004CFF;
+        font-size: 11px;
+        margin-top:10px;
+        margin-left: 5%;
+        display: block;
+        
+    }
+    #eye{
+        scale: 70%;
+        margin-left: 80%;
+        margin-top: -20px;
+        position: absolute;
+        opacity: 0.5;
+    }
+    #frmLogin button{
+        width: 90%;
+        height: 24px;
+        background-color: #FFEC3D;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 12px;
+        color:rgb(44, 44, 46);
+        margin-top:10px;
+        margin-left: 5%;
+    }
+    #frmLogin button:hover{
+        background-color: rgb(248, 217, 38);
+    }
+
+    .logo{
+        margin: auto;
+        padding: auto;
+        position:relative;
+        height: auto;
+        display: block;
+        width: 50%;
+    }
+    .header{
+        background-color:#159EE5;
+        height: 166px;
+        position: fixed;
+        width: 100%;
+        padding-top: 4%;
+    }
+    .footer{
+        background-color:#159EE5;
+        color: white;
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 36.27px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        float: left;
+    }
+
+    .background_img{
+        float: left;
+        padding-top: 160px;
+        display: flex;
+        width: 100%;
+    }
+    .background_img img{
+        display: block;
+        width: 30%;
+        margin: auto;
+    }
+    
+
+
+    .signUp{
+        margin: auto;
+        margin-top: 50px;
+        display: block;
+        background-color: #ECECEC;
+        width: 100%;
+    }
+    #frmSignUp{
+        padding: 10px;
+        margin: auto;
+        display: block;
+        width: 90%;
+
+    }
+    #frmSignUp h2{
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 0px 10px 0px;
+    }
+    #frmSignUp p{
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 0px 7px 0px;
+    }
+    #frmSignUp input{
+        height:23px;
+        border-radius: 5px;
+        border: 1px solid #9E9E9E;
+        padding-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        margin:0px 0px 8px 0px;
+    }
+    #frmSignUp #txtFirstName, #txtLastName, #txtEmail, #txtMobileNo{
+        width: 100%;
+    }
+    #frmSignUp #txtNic, #txtAddress{
+        width: 100%;
+    }
+    #frmSignUp #txtFirstName{
+        margin-right: 4px;
+    }
+    #frmSignUp #txtEmail{
+        margin-right: 4px;
+    }
+    #frmSignUp #rdoProfeser{
+        margin-left: 20px;
+    }
+    #frmSignUp #rdoProfeser, #rdoStudent{
+        width: 17px;
+    }
+    #frmSignUp #txtRdo{
+        padding: 0px 5px 0px 5px;
+        font-size: 11px;
+        display: inline-block;
+        margin-left: 5px;
+        overflow: hidden;
+    }
+    hr{
+        border-top: 1px solid #70707083;
+    }
+    #frmSignUp .txtNewPassword{
+        width: 100%;
+        height: 29px;
+    }
+    #frmSignUp .txtConformPassword{
+        width: 100%;
+        height: 29px;
+    }
+    #btnCreateAccount{
+        width: 178px;
+        height: 54px;
+        background-color: #2863B1;
+        border-radius: 12px;
+        font-size: 14px;
+        color: white;
+        margin: auto;
+        display: block;
+    }
+    #temaAndCondition{
+        padding-top: 20px;
+        display: block;
+        margin: auto;
+        color: #004CFF;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .logo{
+        display: block;
+        width: 50%;
+        position: relative;
+    }
+    #eye{
+        scale: 70%;
+        margin-left: 69%;
+        margin-top: -20px;
+        position: absolute;
+        opacity: 0.5;
+    }
+    .loginText{
+        margin: auto;
+        display: block;
+        position: relative;
+        width: 100%;
+        /*position: relative;*/
+        /*margin-right: 32px;*/
+    }
+    #loginText{
+        width: auto;
+        margin-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        visibility: visible;
+        text-align: right;
+        font-size: 12px;
+        right: 32px;
+    }
+    #frmLogin input{
+        border-radius: 10px;
+        border: 1px solid #004CFF;
+        padding: 5px 0px 5px 10px;
+        width: 50%;
+        color: #004CFF;
+        font-size: 11px;
+        margin: auto;
+        display: block;
+        position: relative;
+        
+    }
+    #frmLogin button{
+        width: 20%;
+        height: 24px;
+        background-color: #FFEC3D;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 12px;
+        color:rgb(44, 44, 46);
+        margin: auto;
+        display: block;
+        position: relative;
+    }
+    #frmLogin{
+        /*margin-top: 110px;
+        margin-right: -32px;*/
+        margin: auto;
+        width: 100%;
+        display: block;
+        background-color: #2863B1;
+        padding: 1% 1% 1% 1%;
+        border-radius: 0px;
+        height: 130px;
+        position: static;
+        /*position: fixed;*/
+    }
+    .header{
+        background-color:#159EE5;
+        height: 140px;
+        position: fixed;
+        width: 100%;
+    }
+
+
+
+    
+}
+@media screen and (max-width: 680px){
+    .header{
+        background-color:#159EE5;
+        height: 130px;
+        position: fixed;
+        width: 100%;
+    }
+    .logo{
+        display: block;
+        margin:auto;
+        width: 50%;
+    }
+    #loginText{
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        visibility: visible;
+        font-size: 12px;
+        right: 32px;
+    }
+    #frmLogin{
+        width: 100%;
+        display: block;
+        background-color: #2863B1;
+        padding: 1% 1% 2% 1%;
+        height: 130px;
+        position: static;
+    }
+    .logo{
+        width: 60%;
+    }
+}

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+/*styles for 1920px 1080px web page*/
+
+/*style for my profile page*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myProfile .topic{
+    width: 100%;
+    color: #2863B1;
+    text-align: center;
+}
+#myProfile .topic p{
+    color: #2863B1;
+    font-size: 30px;
+}
+#myProfile .topic #btnBack{
+    width: 132px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    border: 0px;
+    border-radius: 10px;
+    float: left;
+    color: white;
+    font-size: 16px;
+}
+#myProfile .divDetails{
+    background-color: #ECECEC;
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 5%;
+    border-radius: 20px;
+}
+#myProfile .profileDetails{
+    width: 45%;
+    display: inline-block;
+    height: auto;
+}
+#myProfile .panaltyDetalis{
+    width: 45%;
+    display: block;
+    float: right;
+    height: auto;
+    padding-left: 0%;
+    margin-bottom: 100px;
+}
+#myProfile #subTopic{
+    font-size: 22px;
+    color: black;
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+#myProfile .profileDetails{
+    border-right: 1px solid #cccccc;
+    height: 100%;
+}
+#myProfile .profileDetails input{
+    margin-top: 10px;
+    width: 90%;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    color: #707070;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+}
+#myProfile .profileDetails #selProfession{
+    margin-top: 10px;
+    width: 90%;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    color: #707070;
+    border-radius: 0px;
+    border: 1px solid rgb(184, 184, 184);
+}
+#myProfile .profileDetails #selProfession option{
+    width: 90%;
+
+}
+#myProfile .profileDetails #bntUpdate{
+    width: 70%;
+    background-color: #2863B1;
+    display: block;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    height: 76px;
+    border: 0px;
+}
+#myProfile .panaltyDetalis #tblPanaltyDetails{
+    margin-top: 45px;
+    background-color: white;
+    width: 100%;
+}
+
+#myProfile .panaltyDetalis #tblPanaltyDetails tr td{
+    padding: 10px;
+    background-color: #ECECEC;
+    color: #707070;
+}
+
+/* style for screen wodth grather than 910px web page */
+@media screen and (max-width: 910px){
+}
+
+/* style for screen wodth grather than 720px web page */
+@media screen and (max-width: 720px){
+
+}
+
+/* style for screen wodth grather than 680px web page */
+@media screen and (max-width: 680px){
+
+}

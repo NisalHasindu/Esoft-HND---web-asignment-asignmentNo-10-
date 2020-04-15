@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+/*styles for admin user details page*/
+/*styles for 1920px max width web page*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.divSearchSection{
+    margin-top: 30px;
+    float: left;
+    margin-left: 20px;
+    width: 100%;
+    display: block;
+}
+.divSearchSection input{
+    width: 30%;
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    padding: 5px 10px 5px ;
+}
+.searchUserInput #buttonSection{
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+    width: 100%;
+    display: block;
+}
+.searchUserInput #txtSearchUser{
+    width: 30%;
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    padding: 5px 10px 5px ;
+}
+.searchUserInput button{
+    float: left;
+    width: 15%;
+    height: 24px;
+    font-size: 14px;
+    color: white;
+    border: 0px;
+    margin-right: 10px;
+    border-radius: 12px;
+}
+.red{
+    background-color: #FF003D;
+}
+.green{
+    background-color: #1DC984;
+}
+.blue{
+    background-color: #2863B1;
+}
+.gray{
+    background-color: #707070;
+}
+.black{
+    background-color: black;
+}
+hr{
+    float: left;
+}
+.divUserList{
+    display: block;
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 15px;
+    width: 25%;
+    padding: 10px;
+    height: 350px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.max_height_user{
+    max-height:350px;
+    overflow-y: scroll;
+}
+.tblUserListTopic{
+    width: 95%;
+    color: rgb(255, 217, 0);
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+td{
+    height: 25px;
+    font-size: 14px;
+    
+}
+.tblUserList{
+    width: 100%;
+}
+.divUser .tblBooksTopic{
+    width: 100%;
+    margin-top: 50px;
+    color: #807e7e;
+}
+.firstTd{
+    font-size: 12px;
+    width: 50%;
+    
+}
+.divUser .tblBooksTopic .TdOne{
+    font-size: 12px;
+    width: 48%;
+}
+.divUser .tblBooksTopic .TdTwo{
+    width: 24%;
+    font-size: 12px;
+}
+.divUser .tblBooksTopic .TdThree{
+    font-size: 12px;
+}
+.divUser{
+    width: 34.8%;
+    float: left;
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+}
+.tblUserDetails{
+    width: 90%;
+}
+.tblUserDetails td{
+    font-size: 12px;
+    border-bottom: 1px solid #c4c4c4;
+    width: 50%;
+}
+.tblUserDetails .lable{
+    width: 20%;
+}
+.tblBooks{
+    width: 100%;
+    background-color: white;
+}
+.tblBooks td{
+    border: 1px solid rgb(211, 211, 211);
+    height: 24px;
+    padding: 5px;
+}
+.divPenalty{
+    width: 34.8%;
+    float: left;
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+}
+.divPenalty form{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+.divPenalty form label{
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+.divPenalty input{
+    width: 100%;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+.divPenalty button{
+    margin-top: 10px;
+    width: 50%;
+    border: 0px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    float: left;
+    margin-left: 25%;
+}
+
+.divUser button{
+    margin-top: 10px;
+    width: 30%;
+    border: 0px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    float: left;
+    margin-left: 1%;
+}
+.empty{
+    height: 60px;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #c4c4c4;
+}
+#frmSuspendUser{
+    margin-bottom: 10px;
+}
